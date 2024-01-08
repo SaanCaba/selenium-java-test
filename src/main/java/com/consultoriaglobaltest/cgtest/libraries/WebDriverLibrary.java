@@ -12,7 +12,6 @@ public class WebDriverLibrary {
     @Bean
     public WebDriver getChromeDriver(){
         ChromeOptions co = new ChromeOptions();
-        co.addArguments("--remote-allow-origins=*");
 
         WebDriverManager.chromedriver().setup();
         WebDriver webDriver = new ChromeDriver(co);
